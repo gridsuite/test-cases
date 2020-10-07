@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iidm:network xmlns:iidm="http://www.powsybl.org/schema/iidm/1_3" xmlns:ld="http://www.itesla_project.eu/schema/iidm/ext/load_detail/1_0" id="urn:uuid:904882ba-1a89-477d-b228-0841e20afda8" caseDate="2020-09-11T11:43:00.000Z" forecastDistance="0" sourceFormat="CGMES">
+    <iidm:property name="CGMESModelDetail" value="bus-branch"/>
+    <iidm:substation id="_000f4a54-8a65-5afd-ba69-c00cce876e47" name="BBE3A" country="BE" geographicalTags="_cde19540-4eff-5091-a0c3-9440cdd36574">
+        <iidm:voltageLevel id="_0d43d123-5d97-50f2-a2c3-5ae45a67d446" name="BBE3AA1" nominalV="400.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="_7d504c84-e883-5138-9c9b-82609d805d20" name="BBE3AA1" v="400.0" angle="5.3762E-4"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="_8d286a67-cd6d-5b1c-ad88-3903ccee20a2" name="BBE3AA1 _G" energySource="HYDRO" minP="-9000.0" maxP="9000.0" ratedS="12727.9" voltageRegulatorOn="true" targetP="1166.67" targetV="400.0" targetQ="184.035" bus="_7d504c84-e883-5138-9c9b-82609d805d20" connectableBus="_7d504c84-e883-5138-9c9b-82609d805d20" p="-1166.67" q="-184.035">
+                <iidm:reactiveCapabilityCurve>
+                    <iidm:point p="-9000.0" minQ="-9000.0" maxQ="9000.0"/>
+                    <iidm:point p="9000.0" minQ="-9000.0" maxQ="9000.0"/>
+                </iidm:reactiveCapabilityCurve>
+            </iidm:generator>
+            <iidm:load id="_07bfa692-af54-55ac-a601-7b59af32e007" name="BBE3AA1 _L" loadType="UNDEFINED" p0="1500.0" q0="0.0" bus="_7d504c84-e883-5138-9c9b-82609d805d20" connectableBus="_7d504c84-e883-5138-9c9b-82609d805d20" p="1500.0" q="0.0"/>
+        </iidm:voltageLevel>
+        <iidm:voltageLevel id="_51c059d6-4c6f-59bf-a023-3ee1a961dfc5" name="BBE2AA1" nominalV="400.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="_f80d8315-7e04-577f-84d4-53ad4db3d646" name="BBE2AA1" v="400.0" angle="0.0"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="_760e38e0-f513-533f-a3b2-fdaace01b710" name="BBE2AA1 _G" energySource="HYDRO" minP="-9000.0" maxP="9000.0" ratedS="12727.9" voltageRegulatorOn="true" targetP="1666.67" targetV="400.0" targetQ="58.1987" bus="_f80d8315-7e04-577f-84d4-53ad4db3d646" connectableBus="_f80d8315-7e04-577f-84d4-53ad4db3d646" p="-1666.67" q="-58.1987">
+                <iidm:reactiveCapabilityCurve>
+                    <iidm:point p="-9000.0" minQ="-9000.0" maxQ="9000.0"/>
+                    <iidm:point p="9000.0" minQ="-9000.0" maxQ="9000.0"/>
+                </iidm:reactiveCapabilityCurve>
+            </iidm:generator>
+            <iidm:load id="_4943846e-c53c-520f-a9b0-8922da2a44bf" name="BBE2AA1 _L" loadType="UNDEFINED" p0="1000.0" q0="0.0" bus="_f80d8315-7e04-577f-84d4-53ad4db3d646" connectableBus="_f80d8315-7e04-577f-84d4-53ad4db3d646" p="1000.0" q="0.0"/>
+        </iidm:voltageLevel>
+        <iidm:twoWindingsTransformer id="_9a02390b-fe47-5688-9a59-57a93d972499" name="BBE2AA1  BBE3AA1  1" r="0.0" x="10.0" g="0.0" b="0.0" ratedU1="380.0" ratedU2="380.0" bus1="_7d504c84-e883-5138-9c9b-82609d805d20" connectableBus1="_7d504c84-e883-5138-9c9b-82609d805d20" voltageLevelId1="_0d43d123-5d97-50f2-a2c3-5ae45a67d446" bus2="_f80d8315-7e04-577f-84d4-53ad4db3d646" connectableBus2="_f80d8315-7e04-577f-84d4-53ad4db3d646" voltageLevelId2="_51c059d6-4c6f-59bf-a023-3ee1a961dfc5">
+            <iidm:phaseTapChanger lowTapPosition="1" tapPosition="17" targetDeadband="999.9" regulationMode="ACTIVE_POWER_CONTROL" regulationValue="-9999.0" regulating="false">
+                <iidm:terminalRef id="_9a02390b-fe47-5688-9a59-57a93d972499" side="ONE"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="-6.22764"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="-5.83911"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="-5.45044"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="-5.06165"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="-4.67274"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="-4.28373"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="-3.89461"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="-3.50541"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="-3.11612"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="-2.72676"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="-2.33734"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="-1.94787"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="-1.55835"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="-1.16879"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="-0.779211"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="-0.38961"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="-0.0"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="0.38961"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="0.779211"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="1.16879"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="1.55835"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="1.94787"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="2.33734"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="2.72676"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="3.11612"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="3.50541"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="3.89461"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="4.28373"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="4.67274"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="5.06165"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="5.45044"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="5.83911"/>
+                <iidm:step r="0.0" x="0.0" g="0.0" b="0.0" rho="1.0" alpha="6.22764"/>
+            </iidm:phaseTapChanger>
+            <iidm:currentLimits2 permanentLimit="5000.0"/>
+        </iidm:twoWindingsTransformer>
+    </iidm:substation>
+    <iidm:substation id="_d3114ec3-3a29-565b-be96-a90dc9d839ec" name="BBE1A" country="BE" geographicalTags="_cde19540-4eff-5091-a0c3-9440cdd36574">
+        <iidm:voltageLevel id="_18808113-e48d-5e9e-8e14-11bfb3fcd826" name="BBE1AA1" nominalV="400.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="_64af88df-def7-591e-814b-37636a6fdf63" name="BBE1AA1" v="400.0" angle="-4.18125"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="_164ed893-047e-5389-b9e4-a98d6f36b7bc" name="BBE1AA1 _G" energySource="HYDRO" minP="-9000.0" maxP="9000.0" ratedS="12727.9" voltageRegulatorOn="true" targetP="166.67" targetV="400.0" targetQ="85.1826" bus="_64af88df-def7-591e-814b-37636a6fdf63" connectableBus="_64af88df-def7-591e-814b-37636a6fdf63" p="-166.67" q="-85.1826">
+                <iidm:reactiveCapabilityCurve>
+                    <iidm:point p="-9000.0" minQ="-9000.0" maxQ="9000.0"/>
+                    <iidm:point p="9000.0" minQ="-9000.0" maxQ="9000.0"/>
+                </iidm:reactiveCapabilityCurve>
+            </iidm:generator>
+            <iidm:load id="_e59af172-ccb2-5564-8fc9-787e88b3041c" name="BBE1AA1 _L" loadType="UNDEFINED" p0="2500.0" q0="0.0" bus="_64af88df-def7-591e-814b-37636a6fdf63" connectableBus="_64af88df-def7-591e-814b-37636a6fdf63" p="2500.0" q="0.0"/>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:substation id="_81ec605c-09fe-538f-91e3-96f6c9efd82c" name="FFR3A" country="FR" geographicalTags="_17cf7116-571a-59aa-9988-dd181f33d9b1">
+        <iidm:voltageLevel id="_fe5b6958-7953-50b2-b450-5aac9ba1b1dc" name="FFR3AA1" nominalV="400.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="_44e165dc-f7f5-5ebd-8994-c767e32b2421" name="FFR3AA1" v="400.0" angle="1.99043"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="_468f9251-5c0b-54df-a746-0f22d28808cc" name="FFR3AA1 _G" energySource="HYDRO" minP="-9000.0" maxP="9000.0" ratedS="12727.9" voltageRegulatorOn="true" targetP="3000.0" targetV="400.0" targetQ="25.3629" bus="_44e165dc-f7f5-5ebd-8994-c767e32b2421" connectableBus="_44e165dc-f7f5-5ebd-8994-c767e32b2421" p="-3000.0" q="-25.3629">
+                <iidm:reactiveCapabilityCurve>
+                    <iidm:point p="-9000.0" minQ="-9000.0" maxQ="9000.0"/>
+                    <iidm:point p="9000.0" minQ="-9000.0" maxQ="9000.0"/>
+                </iidm:reactiveCapabilityCurve>
+            </iidm:generator>
+            <iidm:load id="_39c7cf59-2394-58e3-b390-3c062ea74428" name="FFR3AA1 _L" loadType="UNDEFINED" p0="1500.0" q0="0.0" bus="_44e165dc-f7f5-5ebd-8994-c767e32b2421" connectableBus="_44e165dc-f7f5-5ebd-8994-c767e32b2421" p="1500.0" q="0.0"/>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:substation id="_ce91e19d-9fc7-527f-9888-a31bcdd18f99" name="FFR2A" country="FR" geographicalTags="_17cf7116-571a-59aa-9988-dd181f33d9b1">
+        <iidm:voltageLevel id="_9f7f536e-7a6e-54d5-b2c6-d5389933f203" name="FFR2AA1" nominalV="400.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="_7a604d1a-809c-58fb-a468-5edaab1887e3" name="FFR2AA1" v="400.0" angle="0.0"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="_c1c9dab7-9f11-59ca-b64f-72ba1a1c02f6" name="FFR2AA1 _G" energySource="HYDRO" minP="-9000.0" maxP="9000.0" ratedS="12727.9" voltageRegulatorOn="true" targetP="2000.0" targetV="400.0" targetQ="162.686" bus="_7a604d1a-809c-58fb-a468-5edaab1887e3" connectableBus="_7a604d1a-809c-58fb-a468-5edaab1887e3" p="-2000.0" q="-162.686">
+                <iidm:reactiveCapabilityCurve>
+                    <iidm:point p="-9000.0" minQ="-9000.0" maxQ="9000.0"/>
+                    <iidm:point p="9000.0" minQ="-9000.0" maxQ="9000.0"/>
+                </iidm:reactiveCapabilityCurve>
+            </iidm:generator>
+            <iidm:load id="_6016a218-266e-52e9-97ad-0117ee0b2da7" name="FFR2AA1 _L" loadType="UNDEFINED" p0="3500.0" q0="0.0" bus="_7a604d1a-809c-58fb-a468-5edaab1887e3" connectableBus="_7a604d1a-809c-58fb-a468-5edaab1887e3" p="3500.0" q="0.0"/>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:substation id="_fc370f4d-92e6-5311-afcb-94f6f578f023" name="FFR1A" country="FR" geographicalTags="_17cf7116-571a-59aa-9988-dd181f33d9b1">
+        <iidm:voltageLevel id="_ecd4a676-2c63-534c-81b5-888371a163bd" name="FFR1AA1" nominalV="400.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="_5359cd55-6b11-5225-86d5-26dbd076187a" name="FFR1AA1" v="400.0" angle="2.18914"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="_c52a6b7d-7ca0-500f-a671-da148b028c77" name="FFR1AA1 _G" energySource="HYDRO" minP="-9000.0" maxP="9000.0" ratedS="12727.9" voltageRegulatorOn="true" targetP="2000.0" targetV="400.0" targetQ="11.7735" bus="_5359cd55-6b11-5225-86d5-26dbd076187a" connectableBus="_5359cd55-6b11-5225-86d5-26dbd076187a" p="-2000.0" q="-11.7735">
+                <iidm:reactiveCapabilityCurve>
+                    <iidm:point p="-9000.0" minQ="-9000.0" maxQ="9000.0"/>
+                    <iidm:point p="9000.0" minQ="-9000.0" maxQ="9000.0"/>
+                </iidm:reactiveCapabilityCurve>
+            </iidm:generator>
+            <iidm:load id="_8cbf5059-5824-5032-9af8-6f19ee90774a" name="FFR1AA1 _L" loadType="UNDEFINED" p0="1000.0" q0="0.0" bus="_5359cd55-6b11-5225-86d5-26dbd076187a" connectableBus="_5359cd55-6b11-5225-86d5-26dbd076187a" p="1000.0" q="0.0"/>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:substation id="_4112696b-f59b-559e-80e1-e124b27b5d97" name="DDE1A" country="DE" geographicalTags="_e315610b-7285-5bbe-ab88-565a50379f52">
+        <iidm:voltageLevel id="_7a8e6cce-2456-5e6f-a192-3f911922445b" name="DDE1AA1" nominalV="400.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="_7530e171-3987-5427-8e64-975ad9f5abd3" name="DDE1AA1" v="400.0" angle="1.19401"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="_7972e805-65c4-53ad-9679-523801e4971b" name="DDE1AA1 _G" energySource="HYDRO" minP="-9000.0" maxP="9000.0" ratedS="12727.9" voltageRegulatorOn="true" targetP="4166.66" targetV="400.0" targetQ="6.94513" bus="_7530e171-3987-5427-8e64-975ad9f5abd3" connectableBus="_7530e171-3987-5427-8e64-975ad9f5abd3" p="-4166.66" q="-6.94513">
+                <iidm:reactiveCapabilityCurve>
+                    <iidm:point p="-9000.0" minQ="-9000.0" maxQ="9000.0"/>
+                    <iidm:point p="9000.0" minQ="-9000.0" maxQ="9000.0"/>
+                </iidm:reactiveCapabilityCurve>
+            </iidm:generator>
+            <iidm:load id="_d42dcbb2-f903-53c5-a9ed-b1de18eaa7af" name="DDE1AA1 _L" loadType="UNDEFINED" p0="3500.0" q0="0.0" bus="_7530e171-3987-5427-8e64-975ad9f5abd3" connectableBus="_7530e171-3987-5427-8e64-975ad9f5abd3" p="3500.0" q="0.0"/>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:substation id="_8149e628-c4c2-5d5d-a89c-ba061401ade2" name="DDE3A" country="DE" geographicalTags="_e315610b-7285-5bbe-ab88-565a50379f52">
+        <iidm:voltageLevel id="_b82bb1a8-f550-552f-a862-c5fd65ca6ed4" name="DDE3AA1" nominalV="400.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="_f8ba9102-6d21-531e-a514-05b636157181" name="DDE3AA1" v="400.0" angle="5.37168E-4"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="_a39a227c-0a3b-58b6-9853-7dffb87acf19" name="DDE3AA1 _G" energySource="HYDRO" minP="-9000.0" maxP="9000.0" ratedS="12727.9" voltageRegulatorOn="true" targetP="3166.66" targetV="400.0" targetQ="144.826" bus="_f8ba9102-6d21-531e-a514-05b636157181" connectableBus="_f8ba9102-6d21-531e-a514-05b636157181" p="-3166.66" q="-144.826">
+                <iidm:reactiveCapabilityCurve>
+                    <iidm:point p="-9000.0" minQ="-9000.0" maxQ="9000.0"/>
+                    <iidm:point p="9000.0" minQ="-9000.0" maxQ="9000.0"/>
+                </iidm:reactiveCapabilityCurve>
+            </iidm:generator>
+            <iidm:load id="_90947c78-1b82-59ba-afaf-78b6f273ec55" name="DDE3AA1 _L" loadType="UNDEFINED" p0="2000.0" q0="0.0" bus="_f8ba9102-6d21-531e-a514-05b636157181" connectableBus="_f8ba9102-6d21-531e-a514-05b636157181" p="2000.0" q="0.0"/>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:substation id="_ba48c595-285d-59e2-bc7b-c30101e8ef11" name="DDE2A" country="DE" geographicalTags="_e315610b-7285-5bbe-ab88-565a50379f52">
+        <iidm:voltageLevel id="_71ae87c3-07c2-5e32-9092-e11d70e49542" name="DDE2AA1" nominalV="400.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="_86c2ad62-d543-50c6-8add-0e33455c7f2a" name="DDE2AA1" v="400.0" angle="0.0"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="_9fa10082-8ad7-5c2f-9715-5ad196043259" name="DDE2AA1 _G" energySource="HYDRO" minP="-9000.0" maxP="9000.0" ratedS="12727.9" voltageRegulatorOn="true" targetP="3666.66" targetV="400.0" targetQ="66.1506" bus="_86c2ad62-d543-50c6-8add-0e33455c7f2a" connectableBus="_86c2ad62-d543-50c6-8add-0e33455c7f2a" p="-3666.66" q="-66.1506">
+                <iidm:reactiveCapabilityCurve>
+                    <iidm:point p="-9000.0" minQ="-9000.0" maxQ="9000.0"/>
+                    <iidm:point p="9000.0" minQ="-9000.0" maxQ="9000.0"/>
+                </iidm:reactiveCapabilityCurve>
+            </iidm:generator>
+            <iidm:load id="_4af507ca-5836-5bc4-8c42-703ce0ab8a3c" name="DDE2AA1 _L" loadType="UNDEFINED" p0="3000.0" q0="0.0" bus="_86c2ad62-d543-50c6-8add-0e33455c7f2a" connectableBus="_86c2ad62-d543-50c6-8add-0e33455c7f2a" p="3000.0" q="0.0"/>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:substation id="_79e735ba-3bc8-586d-99b6-72ae80d10ad1" name="NNL1A" country="NL" geographicalTags="_e4d8b03c-e65b-558e-99b5-801fc6c1b826">
+        <iidm:voltageLevel id="_72914675-cc74-52c6-815d-f6d9633f1b6e" name="NNL1AA1" nominalV="400.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="_704eb9cd-47f0-5b31-8030-4eedc38b7acb" name="NNL1AA1" v="400.0" angle="2.98577"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="_c2791e3a-2e0e-582b-a10d-ab6ef791076a" name="NNL1AA1 _G" energySource="HYDRO" minP="-9000.0" maxP="9000.0" ratedS="12727.9" voltageRegulatorOn="true" targetP="1833.33" targetV="400.0" targetQ="21.72" bus="_704eb9cd-47f0-5b31-8030-4eedc38b7acb" connectableBus="_704eb9cd-47f0-5b31-8030-4eedc38b7acb" p="-1833.33" q="-21.72">
+                <iidm:reactiveCapabilityCurve>
+                    <iidm:point p="-9000.0" minQ="-9000.0" maxQ="9000.0"/>
+                    <iidm:point p="9000.0" minQ="-9000.0" maxQ="9000.0"/>
+                </iidm:reactiveCapabilityCurve>
+            </iidm:generator>
+            <iidm:load id="_b32f29dc-581e-5d10-9f9e-2253c921c1fc" name="NNL1AA1 _L" loadType="UNDEFINED" p0="1000.0" q0="0.0" bus="_704eb9cd-47f0-5b31-8030-4eedc38b7acb" connectableBus="_704eb9cd-47f0-5b31-8030-4eedc38b7acb" p="1000.0" q="0.0"/>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:substation id="_d6ec2754-c389-5051-9192-6641471e25c1" name="NNL3A" country="NL" geographicalTags="_e4d8b03c-e65b-558e-99b5-801fc6c1b826">
+        <iidm:voltageLevel id="_3768f2fe-22e2-5f2e-b442-4beeea6329c3" name="NNL3AA1" nominalV="400.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="_5b2e0b0f-4373-543b-8edd-43ba57aee037" name="NNL3AA1" v="400.0" angle="2.98603"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="_2d5a7209-c3aa-59af-a6d0-bd9cf4057a24" name="NNL3AA1 _G" energySource="HYDRO" minP="-9000.0" maxP="9000.0" ratedS="12727.9" voltageRegulatorOn="true" targetP="2333.33" targetV="400.0" targetQ="84.4003" bus="_5b2e0b0f-4373-543b-8edd-43ba57aee037" connectableBus="_5b2e0b0f-4373-543b-8edd-43ba57aee037" p="-2333.33" q="-84.4003">
+                <iidm:reactiveCapabilityCurve>
+                    <iidm:point p="-9000.0" minQ="-9000.0" maxQ="9000.0"/>
+                    <iidm:point p="9000.0" minQ="-9000.0" maxQ="9000.0"/>
+                </iidm:reactiveCapabilityCurve>
+            </iidm:generator>
+            <iidm:load id="_bc92b5f5-7233-5dc5-ad80-2abf1f270cad" name="NNL3AA1 _L" loadType="UNDEFINED" p0="2500.0" q0="0.0" bus="_5b2e0b0f-4373-543b-8edd-43ba57aee037" connectableBus="_5b2e0b0f-4373-543b-8edd-43ba57aee037" p="2500.0" q="0.0"/>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:substation id="_00c5c4e0-aa57-5529-9b3e-c356415d472f" name="NNL2A" country="NL" geographicalTags="_e4d8b03c-e65b-558e-99b5-801fc6c1b826">
+        <iidm:voltageLevel id="_cd66f928-285e-58db-aaba-4036e8ca3231" name="NNL2AA1" nominalV="400.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="_9f0cd450-07cc-55f8-aea0-d1b7bdffdc5a" name="NNL2AA1" v="400.0" angle="0.0"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="_12c247dc-c9c1-55fe-be4b-09f7f15d6872" name="NNL2AA1 _G" energySource="HYDRO" minP="-9000.0" maxP="9000.0" ratedS="12727.9" voltageRegulatorOn="true" targetP="833.333" targetV="400.0" targetQ="184.882" bus="_9f0cd450-07cc-55f8-aea0-d1b7bdffdc5a" connectableBus="_9f0cd450-07cc-55f8-aea0-d1b7bdffdc5a" p="-833.333" q="-184.882">
+                <iidm:reactiveCapabilityCurve>
+                    <iidm:point p="-9000.0" minQ="-9000.0" maxQ="9000.0"/>
+                    <iidm:point p="9000.0" minQ="-9000.0" maxQ="9000.0"/>
+                </iidm:reactiveCapabilityCurve>
+            </iidm:generator>
+            <iidm:load id="_a1a3a9a9-7287-5bdf-9ea7-e96fa9ac5f71" name="NNL2AA1 _L" loadType="UNDEFINED" p0="1000.0" q0="0.0" bus="_9f0cd450-07cc-55f8-aea0-d1b7bdffdc5a" connectableBus="_9f0cd450-07cc-55f8-aea0-d1b7bdffdc5a" p="1000.0" q="0.0"/>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:line id="_5e7cbcdc-ae94-5041-84bc-b2c34aecfc26" name="BBE1AA1  BBE2AA1  1" r="0.0" x="10.0" g1="0.0" b1="0.0" g2="0.0" b2="0.0" bus1="_64af88df-def7-591e-814b-37636a6fdf63" connectableBus1="_64af88df-def7-591e-814b-37636a6fdf63" voltageLevelId1="_18808113-e48d-5e9e-8e14-11bfb3fcd826" bus2="_f80d8315-7e04-577f-84d4-53ad4db3d646" connectableBus2="_f80d8315-7e04-577f-84d4-53ad4db3d646" voltageLevelId2="_51c059d6-4c6f-59bf-a023-3ee1a961dfc5">
+        <iidm:currentLimits2 permanentLimit="5000.0"/>
+    </iidm:line>
+    <iidm:line id="_c5ecc1f5-df32-5d2a-a27f-b297b1e41fe7" name="BBE1AA1  BBE3AA1  1" r="0.0" x="10.0" g1="0.0" b1="0.0" g2="0.0" b2="0.0" bus1="_64af88df-def7-591e-814b-37636a6fdf63" connectableBus1="_64af88df-def7-591e-814b-37636a6fdf63" voltageLevelId1="_18808113-e48d-5e9e-8e14-11bfb3fcd826" bus2="_7d504c84-e883-5138-9c9b-82609d805d20" connectableBus2="_7d504c84-e883-5138-9c9b-82609d805d20" voltageLevelId2="_0d43d123-5d97-50f2-a2c3-5ae45a67d446">
+        <iidm:currentLimits2 permanentLimit="5000.0"/>
+    </iidm:line>
+    <iidm:line id="_e4c81ee0-1da7-5f93-8a49-86ca97758bae" name="FFR1AA1  FFR3AA1  1" r="0.0" x="10.0" g1="0.0" b1="0.0" g2="0.0" b2="0.0" bus1="_5359cd55-6b11-5225-86d5-26dbd076187a" connectableBus1="_5359cd55-6b11-5225-86d5-26dbd076187a" voltageLevelId1="_ecd4a676-2c63-534c-81b5-888371a163bd" bus2="_44e165dc-f7f5-5ebd-8994-c767e32b2421" connectableBus2="_44e165dc-f7f5-5ebd-8994-c767e32b2421" voltageLevelId2="_fe5b6958-7953-50b2-b450-5aac9ba1b1dc">
+        <iidm:currentLimits2 permanentLimit="5000.0"/>
+    </iidm:line>
+    <iidm:line id="_37caa364-e264-58e8-8334-a89e6c3eca21" name="FFR2AA1  FFR3AA1  1" r="0.0" x="10.0" g1="0.0" b1="0.0" g2="0.0" b2="0.0" bus1="_7a604d1a-809c-58fb-a468-5edaab1887e3" connectableBus1="_7a604d1a-809c-58fb-a468-5edaab1887e3" voltageLevelId1="_9f7f536e-7a6e-54d5-b2c6-d5389933f203" bus2="_44e165dc-f7f5-5ebd-8994-c767e32b2421" connectableBus2="_44e165dc-f7f5-5ebd-8994-c767e32b2421" voltageLevelId2="_fe5b6958-7953-50b2-b450-5aac9ba1b1dc">
+        <iidm:currentLimits2 permanentLimit="5000.0"/>
+    </iidm:line>
+    <iidm:line id="_e8cf0b61-9734-5e62-9a18-eab2ca0aba64" name="FFR1AA1  FFR2AA1  1" r="0.0" x="10.0" g1="0.0" b1="0.0" g2="0.0" b2="0.0" bus1="_5359cd55-6b11-5225-86d5-26dbd076187a" connectableBus1="_5359cd55-6b11-5225-86d5-26dbd076187a" voltageLevelId1="_ecd4a676-2c63-534c-81b5-888371a163bd" bus2="_7a604d1a-809c-58fb-a468-5edaab1887e3" connectableBus2="_7a604d1a-809c-58fb-a468-5edaab1887e3" voltageLevelId2="_9f7f536e-7a6e-54d5-b2c6-d5389933f203">
+        <iidm:currentLimits2 permanentLimit="5000.0"/>
+    </iidm:line>
+    <iidm:line id="_f1abd69e-c1cf-54b3-9eb7-fb73d5a9dd80" name="DDE2AA1  DDE3AA1  1" r="0.0" x="10.0" g1="0.0" b1="0.0" g2="0.0" b2="0.0" bus1="_86c2ad62-d543-50c6-8add-0e33455c7f2a" connectableBus1="_86c2ad62-d543-50c6-8add-0e33455c7f2a" voltageLevelId1="_71ae87c3-07c2-5e32-9092-e11d70e49542" bus2="_f8ba9102-6d21-531e-a514-05b636157181" connectableBus2="_f8ba9102-6d21-531e-a514-05b636157181" voltageLevelId2="_b82bb1a8-f550-552f-a862-c5fd65ca6ed4">
+        <iidm:currentLimits2 permanentLimit="5000.0"/>
+    </iidm:line>
+    <iidm:line id="_6c532d4b-52fc-596c-aef1-6f7c2b5522b3" name="DDE1AA1  DDE3AA1  1" r="0.0" x="10.0" g1="0.0" b1="0.0" g2="0.0" b2="0.0" bus1="_7530e171-3987-5427-8e64-975ad9f5abd3" connectableBus1="_7530e171-3987-5427-8e64-975ad9f5abd3" voltageLevelId1="_7a8e6cce-2456-5e6f-a192-3f911922445b" bus2="_f8ba9102-6d21-531e-a514-05b636157181" connectableBus2="_f8ba9102-6d21-531e-a514-05b636157181" voltageLevelId2="_b82bb1a8-f550-552f-a862-c5fd65ca6ed4">
+        <iidm:currentLimits2 permanentLimit="5000.0"/>
+    </iidm:line>
+    <iidm:line id="_aa352908-614f-5fac-917e-6c2c8e53490f" name="DDE1AA1  DDE2AA1  1" r="0.0" x="10.0" g1="0.0" b1="0.0" g2="0.0" b2="0.0" bus1="_7530e171-3987-5427-8e64-975ad9f5abd3" connectableBus1="_7530e171-3987-5427-8e64-975ad9f5abd3" voltageLevelId1="_7a8e6cce-2456-5e6f-a192-3f911922445b" bus2="_86c2ad62-d543-50c6-8add-0e33455c7f2a" connectableBus2="_86c2ad62-d543-50c6-8add-0e33455c7f2a" voltageLevelId2="_71ae87c3-07c2-5e32-9092-e11d70e49542">
+        <iidm:currentLimits2 permanentLimit="5000.0"/>
+    </iidm:line>
+    <iidm:line id="_196f4ea9-346b-527f-8244-955242264aab" name="NNL2AA1  NNL3AA1  1" r="0.0" x="10.0" g1="0.0" b1="0.0" g2="0.0" b2="0.0" bus1="_9f0cd450-07cc-55f8-aea0-d1b7bdffdc5a" connectableBus1="_9f0cd450-07cc-55f8-aea0-d1b7bdffdc5a" voltageLevelId1="_cd66f928-285e-58db-aaba-4036e8ca3231" bus2="_5b2e0b0f-4373-543b-8edd-43ba57aee037" connectableBus2="_5b2e0b0f-4373-543b-8edd-43ba57aee037" voltageLevelId2="_3768f2fe-22e2-5f2e-b442-4beeea6329c3">
+        <iidm:currentLimits2 permanentLimit="5000.0"/>
+    </iidm:line>
+    <iidm:line id="_d90eab46-66c3-5d56-87ec-189f7c736dcc" name="NNL1AA1  NNL3AA1  1" r="0.0" x="10.0" g1="0.0" b1="0.0" g2="0.0" b2="0.0" bus1="_704eb9cd-47f0-5b31-8030-4eedc38b7acb" connectableBus1="_704eb9cd-47f0-5b31-8030-4eedc38b7acb" voltageLevelId1="_72914675-cc74-52c6-815d-f6d9633f1b6e" bus2="_5b2e0b0f-4373-543b-8edd-43ba57aee037" connectableBus2="_5b2e0b0f-4373-543b-8edd-43ba57aee037" voltageLevelId2="_3768f2fe-22e2-5f2e-b442-4beeea6329c3">
+        <iidm:currentLimits2 permanentLimit="5000.0"/>
+    </iidm:line>
+    <iidm:line id="_fbee2c4b-5ab0-5536-b226-88be277df510" name="NNL1AA1  NNL2AA1  1" r="0.0" x="10.0" g1="0.0" b1="0.0" g2="0.0" b2="0.0" bus1="_704eb9cd-47f0-5b31-8030-4eedc38b7acb" connectableBus1="_704eb9cd-47f0-5b31-8030-4eedc38b7acb" voltageLevelId1="_72914675-cc74-52c6-815d-f6d9633f1b6e" bus2="_9f0cd450-07cc-55f8-aea0-d1b7bdffdc5a" connectableBus2="_9f0cd450-07cc-55f8-aea0-d1b7bdffdc5a" voltageLevelId2="_cd66f928-285e-58db-aaba-4036e8ca3231">
+        <iidm:currentLimits2 permanentLimit="5000.0"/>
+    </iidm:line>
+    <iidm:tieLine id="_42043588-12ba-5b66-9dde-268818261a34 + _42043588-12ba-5b66-9dde-268818261a34" name="8d7bad8bcc634e0796e362390d9040b6 + 8d7bad8bcc634e0796e362390d9040b6" ucteXnodeCode="TN_Border_BBE2AA1  FFR3AA1  1" bus1="_f80d8315-7e04-577f-84d4-53ad4db3d646" connectableBus1="_f80d8315-7e04-577f-84d4-53ad4db3d646" voltageLevelId1="_51c059d6-4c6f-59bf-a023-3ee1a961dfc5" bus2="_44e165dc-f7f5-5ebd-8994-c767e32b2421" connectableBus2="_44e165dc-f7f5-5ebd-8994-c767e32b2421" voltageLevelId2="_fe5b6958-7953-50b2-b450-5aac9ba1b1dc" id_1="_42043588-12ba-5b66-9dde-268818261a34" name_1="8d7bad8bcc634e0796e362390d9040b6" r_1="0.0" x_1="5.0" g1_1="0.0" b1_1="0.0" g2_1="0.0" b2_1="0.0" xnodeP_1="-499.77" xnodeQ_1="7.8" id_2="_42043588-12ba-5b66-9dde-268818261a34" name_2="8d7bad8bcc634e0796e362390d9040b6" r_2="0.0" x_2="5.0" g1_2="0.0" b1_2="0.0" g2_2="0.0" b2_2="0.0" xnodeP_2="499.77" xnodeQ_2="7.8">
+        <iidm:alias>_42043588-12ba-5b66-9dde-268818261a34</iidm:alias>
+    </iidm:tieLine>
+    <iidm:tieLine id="_73d0eb33-4fae-54d1-9760-dc064e6b32a1 + _73d0eb33-4fae-54d1-9760-dc064e6b32a1" name="8548c448-fcd2-11ea-adc1-0242ac120002 + 8548c448-fcd2-11ea-adc1-0242ac120002" ucteXnodeCode="TN_Border_FFR2AA1  DDE3AA1  1" bus1="_7a604d1a-809c-58fb-a468-5edaab1887e3" connectableBus1="_7a604d1a-809c-58fb-a468-5edaab1887e3" voltageLevelId1="_9f7f536e-7a6e-54d5-b2c6-d5389933f203" bus2="_f8ba9102-6d21-531e-a514-05b636157181" connectableBus2="_f8ba9102-6d21-531e-a514-05b636157181" voltageLevelId2="_b82bb1a8-f550-552f-a862-c5fd65ca6ed4" id_1="_73d0eb33-4fae-54d1-9760-dc064e6b32a1" name_1="8548c448-fcd2-11ea-adc1-0242ac120002" r_1="0.0" x_1="5.0" g1_1="0.0" b1_1="0.0" g2_1="0.0" b2_1="0.0" xnodeP_1="-1499.77" xnodeQ_1="70.44" id_2="_73d0eb33-4fae-54d1-9760-dc064e6b32a1" name_2="8548c448-fcd2-11ea-adc1-0242ac120002" r_2="0.0" x_2="5.0" g1_2="0.0" b1_2="0.0" g2_2="0.0" b2_2="0.0" xnodeP_2="1499.77" xnodeQ_2="70.44">
+        <iidm:alias>_73d0eb33-4fae-54d1-9760-dc064e6b32a1</iidm:alias>
+    </iidm:tieLine>
+    <iidm:tieLine id="_5854b4f8-ee07-52ba-9a26-4d5decf655c7 + _5854b4f8-ee07-52ba-9a26-4d5decf655c7" name="70972ba8-cc52-4297-9579-aeed1eb860f1 + 70972ba8-cc52-4297-9579-aeed1eb860f1" ucteXnodeCode="TN_Border_DDE2AA1  NNL3AA1  1" bus1="_86c2ad62-d543-50c6-8add-0e33455c7f2a" connectableBus1="_86c2ad62-d543-50c6-8add-0e33455c7f2a" voltageLevelId1="_71ae87c3-07c2-5e32-9092-e11d70e49542" bus2="_5b2e0b0f-4373-543b-8edd-43ba57aee037" connectableBus2="_5b2e0b0f-4373-543b-8edd-43ba57aee037" voltageLevelId2="_3768f2fe-22e2-5f2e-b442-4beeea6329c3" id_1="_5854b4f8-ee07-52ba-9a26-4d5decf655c7" name_1="70972ba8-cc52-4297-9579-aeed1eb860f1" r_1="0.0" x_1="5.0" g1_1="0.0" b1_1="0.0" g2_1="0.0" b2_1="0.0" xnodeP_1="1000.22" xnodeQ_1="31.29" id_2="_5854b4f8-ee07-52ba-9a26-4d5decf655c7" name_2="70972ba8-cc52-4297-9579-aeed1eb860f1" r_2="0.0" x_2="5.0" g1_2="0.0" b1_2="0.0" g2_2="0.0" b2_2="0.0" xnodeP_2="-1000.22" xnodeQ_2="31.29">
+        <iidm:alias>_5854b4f8-ee07-52ba-9a26-4d5decf655c7</iidm:alias>
+    </iidm:tieLine>
+    <iidm:tieLine id="_ee216a3a-12e0-5045-b83b-636384d3175f + _ee216a3a-12e0-5045-b83b-636384d3175f" name="305a6edc-fccd-11ea-adc1-0242ac120002 + 305a6edc-fccd-11ea-adc1-0242ac120002" ucteXnodeCode="TN_Border_NNL2AA1  BBE3AA1  1" bus1="_7d504c84-e883-5138-9c9b-82609d805d20" connectableBus1="_7d504c84-e883-5138-9c9b-82609d805d20" voltageLevelId1="_0d43d123-5d97-50f2-a2c3-5ae45a67d446" bus2="_9f0cd450-07cc-55f8-aea0-d1b7bdffdc5a" connectableBus2="_9f0cd450-07cc-55f8-aea0-d1b7bdffdc5a" voltageLevelId2="_cd66f928-285e-58db-aaba-4036e8ca3231" id_1="_ee216a3a-12e0-5045-b83b-636384d3175f" name_1="305a6edc-fccd-11ea-adc1-0242ac120002" r_1="0.0" x_1="5.0" g1_1="0.0" b1_1="0.0" g2_1="0.0" b2_1="0.0" xnodeP_1="-1500.22" xnodeQ_1="70.48" id_2="_ee216a3a-12e0-5045-b83b-636384d3175f" name_2="305a6edc-fccd-11ea-adc1-0242ac120002" r_2="0.0" x_2="5.0" g1_2="0.0" b1_2="0.0" g2_2="0.0" b2_2="0.0" xnodeP_2="1500.22" xnodeQ_2="70.48">
+        <iidm:alias>_ee216a3a-12e0-5045-b83b-636384d3175f</iidm:alias>
+    </iidm:tieLine>
+    <iidm:extension id="_d42dcbb2-f903-53c5-a9ed-b1de18eaa7af">
+        <ld:detail fixedActivePower="0.0" fixedReactivePower="0.0" variableActivePower="3500.0" variableReactivePower="0.0"/>
+    </iidm:extension>
+    <iidm:extension id="_bc92b5f5-7233-5dc5-ad80-2abf1f270cad">
+        <ld:detail fixedActivePower="0.0" fixedReactivePower="0.0" variableActivePower="2500.0" variableReactivePower="0.0"/>
+    </iidm:extension>
+    <iidm:extension id="_39c7cf59-2394-58e3-b390-3c062ea74428">
+        <ld:detail fixedActivePower="0.0" fixedReactivePower="0.0" variableActivePower="1500.0" variableReactivePower="0.0"/>
+    </iidm:extension>
+    <iidm:extension id="_e59af172-ccb2-5564-8fc9-787e88b3041c">
+        <ld:detail fixedActivePower="0.0" fixedReactivePower="0.0" variableActivePower="2500.0" variableReactivePower="0.0"/>
+    </iidm:extension>
+    <iidm:extension id="_b32f29dc-581e-5d10-9f9e-2253c921c1fc">
+        <ld:detail fixedActivePower="0.0" fixedReactivePower="0.0" variableActivePower="1000.0" variableReactivePower="0.0"/>
+    </iidm:extension>
+    <iidm:extension id="_a1a3a9a9-7287-5bdf-9ea7-e96fa9ac5f71">
+        <ld:detail fixedActivePower="0.0" fixedReactivePower="0.0" variableActivePower="1000.0" variableReactivePower="0.0"/>
+    </iidm:extension>
+    <iidm:extension id="_6016a218-266e-52e9-97ad-0117ee0b2da7">
+        <ld:detail fixedActivePower="0.0" fixedReactivePower="0.0" variableActivePower="3500.0" variableReactivePower="0.0"/>
+    </iidm:extension>
+    <iidm:extension id="_4af507ca-5836-5bc4-8c42-703ce0ab8a3c">
+        <ld:detail fixedActivePower="0.0" fixedReactivePower="0.0" variableActivePower="3000.0" variableReactivePower="0.0"/>
+    </iidm:extension>
+    <iidm:extension id="_4943846e-c53c-520f-a9b0-8922da2a44bf">
+        <ld:detail fixedActivePower="0.0" fixedReactivePower="0.0" variableActivePower="1000.0" variableReactivePower="0.0"/>
+    </iidm:extension>
+    <iidm:extension id="_90947c78-1b82-59ba-afaf-78b6f273ec55">
+        <ld:detail fixedActivePower="0.0" fixedReactivePower="0.0" variableActivePower="2000.0" variableReactivePower="0.0"/>
+    </iidm:extension>
+    <iidm:extension id="_07bfa692-af54-55ac-a601-7b59af32e007">
+        <ld:detail fixedActivePower="0.0" fixedReactivePower="0.0" variableActivePower="1500.0" variableReactivePower="0.0"/>
+    </iidm:extension>
+    <iidm:extension id="_8cbf5059-5824-5032-9af8-6f19ee90774a">
+        <ld:detail fixedActivePower="0.0" fixedReactivePower="0.0" variableActivePower="1000.0" variableReactivePower="0.0"/>
+    </iidm:extension>
+</iidm:network>
